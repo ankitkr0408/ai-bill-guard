@@ -1,6 +1,12 @@
 import chalk from "chalk";
 
-export function printReport(data) {
+interface ReportData {
+  totalInput: number;
+  totalOutput: number;
+  cost: number;
+}
+
+export function printReport(data: ReportData) {
   console.log(chalk.green("AI BILL REPORT"));
   console.log("------------------------");
 

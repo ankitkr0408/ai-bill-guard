@@ -8,10 +8,13 @@
   "description": "making npm packages for the developer to analyze the cost of their ai costing",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
+    "dev": "tsx bin/cli.ts",
+    "start": "node bin/cli.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ankit Kumar",
   "license": "ISC",
   "directories": {
     "example": "examples"
