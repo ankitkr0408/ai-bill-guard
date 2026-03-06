@@ -1,4 +1,4 @@
-# ai-bill-guard
+# aicostmonitor
 making npm packages for the developer to analyze the cost of their ai costing
 
 
