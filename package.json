@@ -1,28 +1,47 @@
 {
-  "name": "ai-bill-guard",
-  "version": "1.0.0",
+  "name": "aicostmonitor",
+  "version": "1.0.1",
   "type": "module",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "description": "Professional AI cost monitoring for developers. Track token usage and estimate costs across multiple providers.",
   "bin": {
-    "ai-bill-guard": "./bin/cli.js"
+    "aicostmonitor": "dist/bin/cli.js"
   },
-  "description": "making npm packages for the developer to analyze the cost of their ai costing",
-  "main": "index.js",
   "scripts": {
     "build": "tsc",
     "dev": "tsx bin/cli.ts",
-    "start": "node bin/cli.js",
+    "start": "node dist/bin/cli.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "ai-cost",
+    "llm-cost",
+    "token-usage",
+    "openai-cost",
+    "ai-budget",
+    "llm-monitor",
+    "prompt-cost",
+    "ai-cost-estimator",
+    "billing",
+    "tracker"
+  ],
   "author": "Ankit Kumar",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankitkr0408/aicostmonitor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ankitkr0408/aicostmonitor/issues"
+  },
+  "homepage": "https://github.com/ankitkr0408/aicostmonitor#readme",
   "directories": {
     "example": "examples"
   },
   "dependencies": {
     "chalk": "^5.6.2",
-    "cli-table3": "^0.6.5",
-    "fs": "^0.0.1-security"
+    "cli-table3": "^0.6.5"
   },
   "devDependencies": {
     "@types/node": "^25.3.5"

@@ -1,1 +1,1 @@
-export declare function analyzeLogs(file: any): any;
+export declare function analyzeLogs(file: string): any;

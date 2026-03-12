@@ -12,7 +12,12 @@ export function calculateCost(data: LogEntry[]) {
   let cost = 0;
 
   data.forEach(entry => {
-    const model = pricing[entry.model];
+    const model = pricing[entry.model as keyof typeof pricing];
+
+    if (!model) {
+      console.warn(`Warning: Model ${entry.model} not found in pricing database. Skipping.`);
+      return;
+    }
 
     totalInput += entry.input_tokens;
     totalOutput += entry.output_tokens;

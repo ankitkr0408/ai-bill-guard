@@ -7,7 +7,7 @@ import { printReport } from "../src/reporter.js";
 const file = process.argv[2];
 
 if (!file) {
-  console.log("Usage: ai-bill-guard <logfile.json>");
+  console.log("Usage: aicostmonitor <logfile.json>");
   process.exit(1);
 }
 
